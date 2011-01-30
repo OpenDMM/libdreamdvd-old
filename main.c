@@ -233,12 +233,6 @@ void ddvd_set_audio(struct ddvd *pconfig, int audio_id)
 	ddvd_send_key(pconfig, audio_id);
 }
 
-// set video options
-void ddvd_set_video(struct ddvd *pconfig, int aspect, int tv_mode, int tv_system)
-{
-	ddvd_set_video_ex(pconfig, aspect, tv_mode, tv_mode, tv_system);
-}
-
 // send commands/keys to the main player
 void ddvd_send_key(struct ddvd *pconfig, int key)
 {
